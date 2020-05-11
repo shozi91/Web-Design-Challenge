@@ -7,11 +7,12 @@
     <meta name="description" content="Web Visualization Comparison">
     <meta name="author" content="Shehroze Ahmed">
     <link rel="stylesheet" href="resources/bootstrap.css">
+    <link rel="stylesheet" href="resources/custom.css">
   </head>
 
   <body>
     <div class = "navigation-container d-print-none">
-      <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+        <nav class = "navbar navbar-expand-lg navbar-dark custom-color">
         <a class = "navbar-brand" href = "index.html">Lattitude</a>
         <button class = "navbar-toggler" type="button" data-toggle ="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,8 +36,42 @@
         </div>
       </nav>
     </div>
-    <div class = "container" id="content">
-
+    <div class = "container-fluid my-4" id="content">
+      <div class = "row">
+        <div class = "col-xs-12 col-sm-12">
+          <div class = "jumbotron jumbo-color">
+            <h2 class = "text-color-custom">Comparison: Latitude vs. X</h2>
+            <hr class="my-4">
+            <p> Click any of the plots to get an in-depth analysis.</p>
+            <div class = "row">
+              <div class= "col-xs-12 col-sm-12 col-md-6 text-center">
+                <div class ="col my-4 text-color-custom"><strong>Max Temperature (F)</strong></div>
+                <a href="visualizations/lat_max_temp.html">
+                  <img class = "rounded image-hover image-column" src = "assets/City_Latitude_vs_Max_Temperature.png" alt= "A graph showing latitude vs max temperature"> 
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 text-center">
+                <div class ="col my-4 text-color-custom"><strong>Humidity (%)</strong></div>
+                <a href="visualizations/lat_humid.html">
+                  <img class = "rounded image-hover image-column" src = "assets/City_Latitude_vs_Humidity_(%).png" alt = "A scatter plot of latitude vs humidty">
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 text-center">
+                <div class ="col my-4 text-color-custom"><strong>Cloudiness (%)</strong></div>
+                <a href="visualizations/lat_cloud.html">
+                  <img class = "rounded image-hover image-column" src = "assets/City_Latitude_vs_Cloudiness_(%).png" alt="A scatter plot of latitude vs cloudiness">  
+                </a>
+              </div>
+              <div class= "col-xs-12 col-sm-12 col-md-6 text-center">
+                <div class ="col my-4 text-color-custom"><strong>Wind Speed (mph)</strong></div>
+                <a href="visualizations/lat_wind_speed.html">
+                  <img class = "rounded image-hover image-column" src = "assets/City_Latitude_vs_Wind_Speed_(mph).png" alt="A scatter plot of latitude vs wind speed">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
